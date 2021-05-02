@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 402.421 s <<< FAILURE! - in TestSuite
+feature(runner.CucumberRunner)  Time elapsed: 395.172 s  <<< FAILURE!
+cucumber.runtime.CucumberException: 
+org.openqa.selenium.ElementNotVisibleException: Title is not present on page
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'L1123.local', ip: 'fe80:0:0:0:447:cc81:8971:9a4d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_275'
+Driver info: driver.version: unknown
+Caused by: org.openqa.selenium.ElementNotVisibleException: 
+Title is not present on page
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'L1123.local', ip: 'fe80:0:0:0:447:cc81:8971:9a4d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_275'
+Driver info: driver.version: unknown
+
