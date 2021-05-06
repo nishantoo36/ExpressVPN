@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" configfailurepolicy="continue" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [BDD Test Suite]" parallel="tests">
-  <test name="Login and Update Profile Test(failed)" parallel="tests">
+<suite thread-count="1" configfailurepolicy="continue" verbose="0" name="Failed suite [BDD Test Suite]" parallel="tests">
+  <test name="Naggaro Test(failed)" parallel="tests">
     <classes>
-      <class name="runner.CucumberRunner">
+      <class name="runner.AllRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="feature" invocation-numbers="0"/>
-          <include name="generateHTMLReports"/>
+          <include name="runScenario" invocation-numbers="0 1 2 3 4 5 6 7 8"/>
           <include name="tearDownClass"/>
         </methods>
-      </class> <!-- runner.CucumberRunner -->
+      </class> <!-- runner.AllRunner -->
     </classes>
-  </test> <!-- Login and Update Profile Test(failed) -->
+  </test> <!-- Naggaro Test(failed) -->
 </suite> <!-- Failed suite [BDD Test Suite] -->

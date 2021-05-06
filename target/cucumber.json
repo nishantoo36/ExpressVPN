@@ -3,1595 +3,342 @@
     "line": 1,
     "elements": [
       {
-        "before": [
-          {
-            "result": {
-              "duration": 14176259539,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.Logging(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 369113,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.beforeScenario(Scenario)"
-            }
-          }
-        ],
-        "line": 4,
-        "name": "Verify title and element on homepage",
+        "line": 3,
+        "name": "",
         "description": "",
-        "id": "homepagefeature;verify-title-and-element-on-homepage",
-        "after": [
-          {
-            "result": {
-              "duration": 95643,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.afterScenario(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 198142506,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.afterScenario()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 343380295,
+              "duration": 37708535545,
               "status": "passed"
             },
-            "line": 5,
-            "name": "user launch the app",
+            "line": 4,
+            "name": "User should be on Home Page",
             "match": {
-              "location": "HomePageSteps.userLaunchTheApp()"
+              "location": "PreconditionSteps.userShouldBeOnLoginPage()"
             },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1714768470,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "Verify page title is \"selendroid-test-app\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "selendroid-test-app",
-                  "offset": 22
-                }
-              ],
-              "location": "CommonPageSteps.verifyPageTitleIs(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 14085293840,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Verify that all elements available on Home screen",
-            "match": {
-              "location": "HomePageSteps.verifyThatAllElementsAvailableOnScreen()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 3,
-            "name": "@TestngScenario"
+            "keyword": "Given "
           }
         ]
       },
       {
-        "before": [
-          {
-            "result": {
-              "duration": 11657307880,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.Logging(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 28721,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.beforeScenario(Scenario)"
-            }
-          }
-        ],
-        "line": 10,
-        "name": "Verify that after selecting \"no, no\" option for \"ENbutton\" user should be on home page",
+        "line": 7,
+        "name": "Test Drag and Drop",
         "description": "",
-        "id": "homepagefeature;verify-that-after-selecting-\"no,-no\"-option-for-\"enbutton\"-user-should-be-on-home-page",
-        "after": [
-          {
-            "result": {
-              "duration": 38298,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.afterScenario(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 187385685,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.afterScenario()"
-            }
-          }
-        ],
+        "id": "validationtestforlogin;test-drag-and-drop",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 83440631,
+              "duration": 3729444495,
               "status": "passed"
             },
-            "line": 11,
-            "name": "user launch the app",
+            "line": 8,
+            "name": "user click on \"Dropable\" link",
             "match": {
-              "location": "HomePageSteps.userLaunchTheApp()"
+              "arguments": [
+                {
+                  "val": "Dropable",
+                  "offset": 15
+                }
+              ],
+              "location": "HomePageSteps.userClickOnLink(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1883377582,
+              "duration": 420687126,
               "status": "passed"
             },
-            "line": 12,
-            "name": "Verify page title is \"selendroid-test-app\"",
+            "line": 9,
+            "name": "user do drag and drop",
             "match": {
-              "arguments": [
-                {
-                  "val": "selendroid-test-app",
-                  "offset": 22
-                }
-              ],
-              "location": "CommonPageSteps.verifyPageTitleIs(String)"
+              "location": "DragAndDropPageSteps.userDoDragAndDrop()"
             },
-            "keyword": "Then "
-          },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@WebScenarios"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
           {
             "result": {
-              "duration": 1386106786,
+              "duration": 6955023097,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User should be on Home Page",
+            "match": {
+              "location": "PreconditionSteps.userShouldBeOnLoginPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Test Select",
+        "description": "",
+        "id": "validationtestforlogin;test-select",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3389525191,
               "status": "passed"
             },
             "line": 13,
-            "name": "user click on ENButton",
+            "name": "user click on \"Selectable\" link",
             "match": {
-              "location": "HomePageSteps.userClickOnENButton()"
+              "arguments": [
+                {
+                  "val": "Selectable",
+                  "offset": 15
+                }
+              ],
+              "location": "HomePageSteps.userClickOnLink(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1881098899,
+              "duration": 454967805,
               "status": "passed"
             },
             "line": 14,
-            "name": "Verify that This will end the activity pop-up is open up",
-            "match": {
-              "location": "HomePageSteps.thisWillEndTheActivityPopUpIsOpenUp()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1244124307,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user click on No no button",
-            "match": {
-              "location": "HomePageSteps.userClickOnNoNoButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1576374363,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "Verify page title is \"selendroid-test-app\"",
+            "name": "user select [\"Item 1\",\"Item 3\",\"Item 7\"]",
             "match": {
               "arguments": [
                 {
-                  "val": "selendroid-test-app",
-                  "offset": 22
-                }
-              ],
-              "location": "CommonPageSteps.verifyPageTitleIs(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 13612065141,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "Verify that all elements available on Home screen",
-            "match": {
-              "location": "HomePageSteps.verifyThatAllElementsAvailableOnScreen()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 9,
-            "name": "@TestngScenario"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 11705547054,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.Logging(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 29507,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.beforeScenario(Scenario)"
-            }
-          }
-        ],
-        "line": 20,
-        "name": "Verify the elements after selecting chrome logo",
-        "description": "",
-        "id": "homepagefeature;verify-the-elements-after-selecting-chrome-logo",
-        "after": [
-          {
-            "result": {
-              "duration": 47730,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.afterScenario(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 237846459,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.afterScenario()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 68960739,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "user launch the app",
-            "match": {
-              "location": "HomePageSteps.userLaunchTheApp()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1890399050,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "Verify page title is \"selendroid-test-app\"",
-            "match": {
-              "arguments": [
+                  "val": "Item 1",
+                  "offset": 14
+                },
                 {
-                  "val": "selendroid-test-app",
-                  "offset": 22
-                }
-              ],
-              "location": "CommonPageSteps.verifyPageTitleIs(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1343267883,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "user click on Chrome logo",
-            "match": {
-              "location": "HomePageSteps.userClickOnChromeLogo()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4029925878,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "Verify page title is \"selendroid-test-app\"",
-            "match": {
-              "arguments": [
+                  "val": "Item 3",
+                  "offset": 23
+                },
                 {
-                  "val": "selendroid-test-app",
-                  "offset": 22
-                }
-              ],
-              "location": "CommonPageSteps.verifyPageTitleIs(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 324475826,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "Verify that text \"Hello, can you please tell me your name?\" is present in text view",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Hello, can you please tell me your name?",
-                  "offset": 18
-                }
-              ],
-              "location": "CommonPageSteps.verifyThatTextIsPresent(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3174356920,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "user enter name as \"Nishant Patel\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Nishant Patel",
-                  "offset": 20
-                }
-              ],
-              "location": "ChromePageSteps.userEnterNameAs(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 14459836663,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "user select car as \"Mercedes\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Mercedes",
-                  "offset": 20
-                }
-              ],
-              "location": "ChromePageSteps.userSelectCarAs(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1876294147,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "Verify that car in drop down selected as \"Mercedes\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Mercedes",
-                  "offset": 42
-                }
-              ],
-              "location": "ChromePageSteps.verifyThatCarInDropDownSelectedAs(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1832781573,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "user select send me your name button",
-            "match": {
-              "location": "ChromePageSteps.userSelectSendMeYourNameButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1423825571,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "Verify that text \"This is my way of saying hello\" is present in text view",
-            "match": {
-              "arguments": [
-                {
-                  "val": "This is my way of saying hello",
-                  "offset": 18
-                }
-              ],
-              "location": "CommonPageSteps.verifyThatTextIsPresent(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1781849064,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "Verify the entered name as \"Nishant Patel\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Nishant Patel",
-                  "offset": 28
-                }
-              ],
-              "location": "ChromePageSteps.verifyTheEnteredNameAs(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1846906641,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "Verify car name as \"mercedes\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "mercedes",
-                  "offset": 20
-                }
-              ],
-              "location": "ChromePageSteps.verifyCarNameAs(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1697385717,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "user click on start again link",
-            "match": {
-              "location": "ChromePageSteps.userClickOnStartAgainLink()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2428827209,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "Verify that car in drop down selected as \"Volvo\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Volvo",
-                  "offset": 42
-                }
-              ],
-              "location": "ChromePageSteps.verifyThatCarInDropDownSelectedAs(String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 19,
-            "name": "@TestngScenario"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 14862409643,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.Logging(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 28826,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.beforeScenario(Scenario)"
-            }
-          }
-        ],
-        "line": 64,
-        "name": "Verify the elements after selecting file logo",
-        "description": "",
-        "id": "homepagefeature;verify-the-elements-after-selecting-file-logo;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 28536,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.afterScenario(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 277103139,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.afterScenario()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 62290193,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "user launch the app",
-            "match": {
-              "location": "HomePageSteps.userLaunchTheApp()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2431633469,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "Verify page title is \"selendroid-test-app\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "selendroid-test-app",
-                  "offset": 22
-                }
-              ],
-              "location": "CommonPageSteps.verifyPageTitleIs(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1851461016,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "user click on File logo",
-            "match": {
-              "location": "HomePageSteps.userClickOnFileLogo()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3337353380,
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "Verify page title is \"selendroid-test-app\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "selendroid-test-app",
-                  "offset": 22
-                }
-              ],
-              "location": "CommonPageSteps.verifyPageTitleIs(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 317355474,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "Verify that text \"Welcome to register a new User\" is present in text view",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Welcome to register a new User",
-                  "offset": 18
-                }
-              ],
-              "location": "CommonPageSteps.verifyThatTextIsPresent(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 15898422560,
-              "status": "passed"
-            },
-            "line": 43,
-            "name": "Verify that all elements available on registration screen",
-            "match": {
-              "location": "RegistrationPageSteps.verifyThatAllElementsAvailableOnRegistrationScreen()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2241679638,
-              "status": "passed"
-            },
-            "line": 44,
-            "name": "Verify that \"Mr. Burns\" is prePopulated in name field",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Mr. Burns",
-                  "offset": 13
-                }
-              ],
-              "location": "RegistrationPageSteps.verifyThatIsPrePopulatedInNameField(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1731104279,
-              "status": "passed"
-            },
-            "line": 45,
-            "name": "Verify that \"Ruby\" is selected as programming language by default",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Ruby",
-                  "offset": 13
-                }
-              ],
-              "location": "RegistrationPageSteps.verifyThatIsSelectedAsProgrammingLanguageByDefault(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3062365875,
-              "status": "passed"
-            },
-            "line": 46,
-            "name": "user select username as \"Nishanttest\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Nishanttest",
-                  "offset": 25
-                }
-              ],
-              "location": "RegistrationPageSteps.userSelectUsernameAs(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2337202493,
-              "status": "passed"
-            },
-            "line": 47,
-            "name": "user select email as \"pnishant90@mailinator.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "pnishant90@mailinator.com",
-                  "offset": 22
-                }
-              ],
-              "location": "RegistrationPageSteps.userSelectEmailAs(String)"
-            },
-            "matchedColumns": [
-              3
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2969317656,
-              "status": "passed"
-            },
-            "line": 48,
-            "name": "user select password as \"asdf123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "asdf123",
-                  "offset": 25
-                }
-              ],
-              "location": "RegistrationPageSteps.userSelectPasswordAs(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2880743775,
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "user select name as \"Nishant Patel\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Nishant Patel",
-                  "offset": 21
-                }
-              ],
-              "location": "RegistrationPageSteps.userSelectNameAs(String)"
-            },
-            "matchedColumns": [
-              4
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4472489192,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "user select programming language as \"Java\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Java",
-                  "offset": 37
-                }
-              ],
-              "location": "RegistrationPageSteps.userSelectProgrammingLanguageAs(String)"
-            },
-            "matchedColumns": [
-              5
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2026121870,
-              "status": "passed"
-            },
-            "line": 51,
-            "name": "user select I accept adds checkbox",
-            "match": {
-              "location": "RegistrationPageSteps.userSelectIAcceptAddsCheckbox()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2050022246,
-              "status": "passed"
-            },
-            "line": 52,
-            "name": "user click Register user (verify)",
-            "match": {
-              "location": "RegistrationPageSteps.userClickRegisterUserVerify()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2478793611,
-              "status": "passed"
-            },
-            "line": 53,
-            "name": "Verify that value of name is \"Nishant Patel\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Nishant Patel",
-                  "offset": 30
-                }
-              ],
-              "location": "RegistrationPageSteps.verifyThatValueOfNameIs(String)"
-            },
-            "matchedColumns": [
-              4
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2046305157,
-              "status": "passed"
-            },
-            "line": 54,
-            "name": "Verify that value of username is \"Nishanttest\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Nishanttest",
-                  "offset": 34
-                }
-              ],
-              "location": "RegistrationPageSteps.verifyThatValueOfUsernameIs(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2023826967,
-              "status": "passed"
-            },
-            "line": 55,
-            "name": "Verify that value of password is \"asdf123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "asdf123",
-                  "offset": 34
-                }
-              ],
-              "location": "RegistrationPageSteps.verifyThatValueOfPasswordIs(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1994335123,
-              "status": "passed"
-            },
-            "line": 56,
-            "name": "Verify that value of email is \"pnishant90@mailinator.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "pnishant90@mailinator.com",
-                  "offset": 31
-                }
-              ],
-              "location": "RegistrationPageSteps.verifyThatValueOfEmailIs(String)"
-            },
-            "matchedColumns": [
-              3
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2014613489,
-              "status": "passed"
-            },
-            "line": 57,
-            "name": "Verify that value of programming language is \"Java\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Java",
-                  "offset": 46
-                }
-              ],
-              "location": "RegistrationPageSteps.verifyThatValueOfProgrammingLanguageIs(String)"
-            },
-            "matchedColumns": [
-              5
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1983498564,
-              "status": "passed"
-            },
-            "line": 58,
-            "name": "Verify that bool status of I accepted adds is \"true\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "true",
-                  "offset": 47
-                }
-              ],
-              "location": "RegistrationPageSteps.verifyThatBoolStatusOfIAcceptedAddsIs(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1991655634,
-              "status": "passed"
-            },
-            "line": 59,
-            "name": "user click Register use",
-            "match": {
-              "location": "RegistrationPageSteps.userClickRegisterUse()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 18183200724,
-              "status": "passed"
-            },
-            "line": 60,
-            "name": "Verify that all elements available on Home screen",
-            "match": {
-              "location": "HomePageSteps.verifyThatAllElementsAvailableOnScreen()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 36,
-            "name": "@TestngScenario"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 14284103611,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.Logging(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 30905,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.beforeScenario(Scenario)"
-            }
-          }
-        ],
-        "line": 67,
-        "name": "Verify the elements after selecting show progress",
-        "description": "",
-        "id": "homepagefeature;verify-the-elements-after-selecting-show-progress",
-        "after": [
-          {
-            "result": {
-              "duration": 29313,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.afterScenario(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 247568436,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.afterScenario()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 77703405,
-              "status": "passed"
-            },
-            "line": 68,
-            "name": "user launch the app",
-            "match": {
-              "location": "HomePageSteps.userLaunchTheApp()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2402895868,
-              "status": "passed"
-            },
-            "line": 69,
-            "name": "Verify page title is \"selendroid-test-app\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "selendroid-test-app",
-                  "offset": 22
-                }
-              ],
-              "location": "CommonPageSteps.verifyPageTitleIs(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 26526709431,
-              "status": "passed"
-            },
-            "line": 70,
-            "name": "user click on show progress bar",
-            "match": {
-              "location": "HomePageSteps.userClickOnShowProgressBar()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 5417491784,
-              "status": "passed"
-            },
-            "line": 71,
-            "name": "Verify page title is \"selendroid-test-app\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "selendroid-test-app",
-                  "offset": 22
-                }
-              ],
-              "location": "CommonPageSteps.verifyPageTitleIs(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 10839235398,
-              "status": "passed"
-            },
-            "line": 72,
-            "name": "Verify that all elements available on registration screen",
-            "match": {
-              "location": "RegistrationPageSteps.verifyThatAllElementsAvailableOnRegistrationScreen()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 66,
-            "name": "@TestngScenario"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 14328382099,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.Logging(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 65003,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.beforeScenario(Scenario)"
-            }
-          }
-        ],
-        "line": 75,
-        "name": "Verify Toast message",
-        "description": "",
-        "id": "homepagefeature;verify-toast-message",
-        "after": [
-          {
-            "result": {
-              "duration": 28290,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.afterScenario(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 251512299,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.afterScenario()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 64055967,
-              "status": "passed"
-            },
-            "line": 76,
-            "name": "user launch the app",
-            "match": {
-              "location": "HomePageSteps.userLaunchTheApp()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2251404327,
-              "status": "passed"
-            },
-            "line": 77,
-            "name": "Verify page title is \"selendroid-test-app\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "selendroid-test-app",
-                  "offset": 22
-                }
-              ],
-              "location": "CommonPageSteps.verifyPageTitleIs(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1880079949,
-              "status": "passed"
-            },
-            "line": 78,
-            "name": "user click on Display Toast message",
-            "match": {
-              "location": "HomePageSteps.userClickOnDisplayToastMessage()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1531818354,
-              "status": "passed"
-            },
-            "line": 79,
-            "name": "Toast message should appear as \"Hello selendroid toast!\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Hello selendroid toast!",
+                  "val": "Item 7",
                   "offset": 32
                 }
               ],
-              "location": "HomePageSteps.toastMessageShouldAppearAs(String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 74,
-            "name": "@TestngScenario"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 14349832084,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.Logging(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 115371,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.beforeScenario(Scenario)"
-            }
-          }
-        ],
-        "line": 82,
-        "name": "Verify popup test",
-        "description": "",
-        "id": "homepagefeature;verify-popup-test",
-        "after": [
-          {
-            "result": {
-              "duration": 30478,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.afterScenario(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 266763654,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.afterScenario()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 72941998,
-              "status": "passed"
-            },
-            "line": 83,
-            "name": "user launch the app",
-            "match": {
-              "location": "HomePageSteps.userLaunchTheApp()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2309973101,
-              "status": "passed"
-            },
-            "line": 84,
-            "name": "Verify page title is \"selendroid-test-app\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "selendroid-test-app",
-                  "offset": 22
-                }
-              ],
-              "location": "CommonPageSteps.verifyPageTitleIs(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1844060564,
-              "status": "passed"
-            },
-            "line": 85,
-            "name": "user click on Display Popup Window button",
-            "match": {
-              "location": "HomePageSteps.userClickOnDisplayPopupWindowButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2429684474,
-              "status": "passed"
-            },
-            "line": 86,
-            "name": "user dismiss popup button",
-            "match": {
-              "location": "HomePageSteps.userDismissPopupButton()"
+              "location": "SelectAblePageSteps.userSelect(String,String,String)"
             },
             "keyword": "When "
           }
         ],
         "tags": [
           {
-            "line": 81,
-            "name": "@TestngScenario"
+            "name": "@WebScenarios"
           }
         ]
       },
       {
-        "before": [
-          {
-            "result": {
-              "duration": 14409598477,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.Logging(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 39737,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.beforeScenario(Scenario)"
-            }
-          }
-        ],
-        "line": 90,
-        "name": "Verify that app should not crash when tap on \"Press to throw unhandled action exception\"",
+        "line": 3,
+        "name": "",
         "description": "",
-        "id": "homepagefeature;verify-that-app-should-not-crash-when-tap-on-\"press-to-throw-unhandled-action-exception\"",
-        "after": [
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
           {
             "result": {
-              "duration": 8560964455,
+              "duration": 4762201220,
               "status": "passed"
             },
+            "line": 4,
+            "name": "User should be on Home Page",
             "match": {
-              "location": "Hooks.afterScenario(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 180699955,
-              "status": "passed"
+              "location": "PreconditionSteps.userShouldBeOnLoginPage()"
             },
-            "match": {
-              "location": "Hooks.afterScenario()"
-            }
+            "keyword": "Given "
           }
-        ],
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Test Control group",
+        "description": "",
+        "id": "validationtestforlogin;test-control-group",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 64175909,
+              "duration": 4685315075,
               "status": "passed"
             },
-            "line": 91,
-            "name": "user launch the app",
+            "line": 19,
+            "name": "user click on \"Controlgroup\" link",
             "match": {
-              "location": "HomePageSteps.userLaunchTheApp()"
+              "arguments": [
+                {
+                  "val": "Controlgroup",
+                  "offset": 15
+                }
+              ],
+              "location": "HomePageSteps.userClickOnLink(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2428405070,
+              "duration": 69598681,
               "status": "passed"
             },
-            "line": 92,
-            "name": "Verify page title is \"selendroid-test-app\"",
+            "line": 20,
+            "name": "user switch to iframe",
             "match": {
-              "arguments": [
-                {
-                  "val": "selendroid-test-app",
-                  "offset": 22
-                }
-              ],
-              "location": "CommonPageSteps.verifyPageTitleIs(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1847980202,
-              "status": "passed"
-            },
-            "line": 93,
-            "name": "user click on Press to throw unhandled action exception",
-            "match": {
-              "location": "HomePageSteps.userClickOnPressToThrowUnhandledActionException()"
+              "location": "PreconditionSteps.userSwitchToIframe()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 17362182533,
-              "error_message": "org.openqa.selenium.ElementNotVisibleException: Title is not present on page\nBuild info: version: \u00273.13.0\u0027, revision: \u00272f0d292\u0027, time: \u00272018-06-25T15:24:21.231Z\u0027\nSystem info: host: \u0027L1123.local\u0027, ip: \u0027fe80:0:0:0:447:cc81:8971:9a4d%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.7\u0027, java.version: \u00271.8.0_275\u0027\nDriver info: driver.version: unknown\n\tat Pages.CommonPageAction.getTitle(CommonPageAction.java:33)\n\tat stepFiles.CommonPageSteps.verifyPageTitleIs(CommonPageSteps.java:23)\n\tat ✽.Then Verify page title is \"selendroid-test-app\"(HomePageFeature.feature:94)\n",
-              "status": "failed"
+              "duration": 156839767,
+              "status": "passed"
             },
-            "line": 94,
-            "name": "Verify page title is \"selendroid-test-app\"",
+            "line": 21,
+            "name": "user select \"SUV\" in horizontal car-type selection",
             "match": {
               "arguments": [
                 {
-                  "val": "selendroid-test-app",
-                  "offset": 22
+                  "val": "SUV",
+                  "offset": 13
                 }
               ],
-              "location": "CommonPageSteps.verifyPageTitleIs(String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 89,
-            "name": "@TestngScenario"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 14130975721,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.Logging(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 74355,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.beforeScenario(Scenario)"
-            }
-          }
-        ],
-        "line": 97,
-        "name": "Verify that app should not crash when tap on \"Press to throw unhandled action exception\"",
-        "description": "",
-        "id": "homepagefeature;verify-that-app-should-not-crash-when-tap-on-\"press-to-throw-unhandled-action-exception\"",
-        "after": [
-          {
-            "result": {
-              "duration": 8168330446,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.afterScenario(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 203982122,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.afterScenario()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 86558410,
-              "status": "passed"
-            },
-            "line": 98,
-            "name": "user launch the app",
-            "match": {
-              "location": "HomePageSteps.userLaunchTheApp()"
+              "location": "ControlAbleGroupPageSteps.userSelectInHorizontalCarTypeSelection(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2458888325,
+              "duration": 52721987,
               "status": "passed"
             },
-            "line": 99,
-            "name": "Verify page title is \"selendroid-test-app\"",
+            "line": 22,
+            "name": "user select Automatic transmission in horizontal car-type selection",
             "match": {
-              "arguments": [
-                {
-                  "val": "selendroid-test-app",
-                  "offset": 22
-                }
-              ],
-              "location": "CommonPageSteps.verifyPageTitleIs(String)"
+              "location": "ControlAbleGroupPageSteps.userSelectAutomaticTransmissionInHorizontalCarTypeSelection()"
             },
-            "keyword": "Then "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 14107514362,
-              "error_message": "org.openqa.selenium.NoSuchElementException: Can\u0027t locate an element by this strategy: By.chained({By.xpath: //android.widget.EditText[contains(@resource-id,\u0027exceptionTestField\u0027)]})\n\tat io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)\n\tat io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)\n\tat io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(\u003cgenerated\u003e)\n\tat Pages.HomePagePage.enterCustomiseException(HomePagePage.java:235)\n\tat stepFiles.HomePageSteps.userEnterInTypeToThrowUnhandledExceptionField(HomePageSteps.java:79)\n\tat ✽.When user enter \"test\" in type to throw unhandled exception field(HomePageFeature.feature:100)\nCaused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@3b6706c4 (tried for 10 second(s) with 500 milliseconds interval)\n\tat org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:303)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)\n\tat io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)\n\tat io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)\n\tat io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)\n\tat io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(\u003cgenerated\u003e)\n\tat Pages.HomePagePage.enterCustomiseException(HomePagePage.java:235)\n\tat stepFiles.HomePageSteps.userEnterInTypeToThrowUnhandledExceptionField(HomePageSteps.java:79)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\n\tat cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)\n\tat cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:639)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:774)\n\tat org.testng.TestRunner.run(TestRunner.java:624)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:359)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:39)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)\n\tat org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\nCaused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.EditText[contains(@resource-id,\u0027exceptionTestField\u0027)]})\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.13.0\u0027, revision: \u00272f0d292\u0027, time: \u00272018-06-25T15:24:21.231Z\u0027\nSystem info: host: \u0027L1123.local\u0027, ip: \u0027fe80:0:0:0:447:cc81:8971:9a4d%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.7\u0027, java.version: \u00271.8.0_275\u0027\nDriver info: driver.version: AndroidDriver\n\tat io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)\n\tat io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)\n\tat io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)\n\tat io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)\n\tat io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)\n\tat io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)\n\tat io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)\n\tat io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)\n\tat io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)\n\t... 42 more\n",
-              "status": "failed"
+              "duration": 52169418,
+              "status": "passed"
             },
-            "line": 100,
-            "name": "user enter \"test\" in type to throw unhandled exception field",
+            "line": 23,
+            "name": "user select Insurance checkbox in horizontal car-type selection",
+            "match": {
+              "location": "ControlAbleGroupPageSteps.userSelectInsuranceCheckboxInHorizontalCarTypeSelection()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 152813442,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user enter \"1\" value in number of car input box",
             "match": {
               "arguments": [
                 {
-                  "val": "test",
+                  "val": "1",
                   "offset": 12
                 }
               ],
-              "location": "HomePageSteps.userEnterInTypeToThrowUnhandledExceptionField(String)"
+              "location": "ControlAbleGroupPageSteps.userEnterValueInNumberOfCarInputBox(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 180527657,
+              "status": "passed"
             },
-            "line": 101,
-            "name": "Verify page title is \"selendroid-test-app\"",
+            "line": 25,
+            "name": "user select \"Truck\" in vertical car-type selection",
             "match": {
               "arguments": [
                 {
-                  "val": "selendroid-test-app",
-                  "offset": 22
+                  "val": "Truck",
+                  "offset": 13
                 }
               ],
-              "location": "CommonPageSteps.verifyPageTitleIs(String)"
+              "location": "ControlAbleGroupPageSteps.userSelectInVerticalCarTypeSelection(String)"
             },
-            "keyword": "Then "
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 54989166,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user select Standard transmission in vertical car-type selection",
+            "match": {
+              "location": "ControlAbleGroupPageSteps.userSelectStandardTransmissionInVerticalCarTypeSelection()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 52366429,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user select Insurance checkbox in vertical car-type selection",
+            "match": {
+              "location": "ControlAbleGroupPageSteps.userSelectInsuranceCheckboxInVerticalCarTypeSelection()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 88580050,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user enter \"3\" value in number of car vertical box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 12
+                }
+              ],
+              "location": "ControlAbleGroupPageSteps.userEnterValueInNumberOfCarVerticalBox(String)"
+            },
+            "keyword": "When "
           }
         ],
         "tags": [
           {
-            "line": 96,
-            "name": "@TestngScenario"
+            "name": "@WebScenarios"
           }
         ]
       }
     ],
-    "name": "HomePageFeature",
+    "name": "ValidationTestForLogin",
     "description": "",
-    "id": "homepagefeature",
+    "id": "validationtestforlogin",
     "keyword": "Feature",
-    "uri": "HomePageFeature.feature"
+    "uri": "src/test/java/FeatureFiles/WebTest/WebFeature.feature"
   }
 ]
