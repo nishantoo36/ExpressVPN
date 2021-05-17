@@ -1,4 +1,4 @@
-Feature: ValidationTestForLogin
+Feature: WebFeature
 
   Background:
     Given User should be on Home Page

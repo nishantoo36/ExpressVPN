@@ -99,19 +99,19 @@ public class MobileRunner extends AbstractTestNGCucumberParallelTests {
         throw new IOException("Unable to find free port");
     }
 
-    @AfterMethod(alwaysRun = true)
-    public void killDriver(ITestResult result) {
-        String path = null;
-        String ImageFileName = result.getMethod().getMethodName()
-                + new SimpleDateFormat("MM-dd-yyyy_HH-ss").format(new GregorianCalendar().getTime()) + ".png";
-        if (result.isSuccess()) {
-            path = System.getProperty("user.dir") + "//screenshots/Mobile/Pass//" + ImageFileName;
-        } else {
-            path = System.getProperty("user.dir") + "//screenshots/Mobile/Fail-Skip//" + ImageFileName;
-        }
-        takeScreenShot(ImageFileName, path, driver);
-        driver.quit();
-    }
+//    @AfterMethod(alwaysRun = true)
+//    public void killDriver(ITestResult result) {
+//        String path = null;
+//        String ImageFileName = result.getMethod().getMethodName()
+//                + new SimpleDateFormat("MM-dd-yyyy_HH-ss").format(new GregorianCalendar().getTime()) + ".png";
+//        if (result.isSuccess()) {
+//            path = System.getProperty("user.dir") + "//screenshots/Mobile/Pass//" + ImageFileName;
+//        } else {
+//            path = System.getProperty("user.dir") + "//screenshots/Mobile/Fail-Skip//" + ImageFileName;
+//        }
+//        takeScreenShot(ImageFileName, path, driver);
+//        driver.quit();
+//    }
 
 
 }

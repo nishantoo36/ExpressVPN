@@ -1,4 +1,4 @@
-Feature: HomePageFeature
+Feature: MobileFeature
 
   Background:
     Given user launch the app
