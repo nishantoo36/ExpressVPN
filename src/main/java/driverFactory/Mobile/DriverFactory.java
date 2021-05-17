@@ -4,14 +4,10 @@ import driverFactory.CommonDriverFactoryMethod;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
-
-import java.io.File;
-import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 
