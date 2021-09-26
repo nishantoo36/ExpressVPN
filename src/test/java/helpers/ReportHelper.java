@@ -13,16 +13,17 @@ public class ReportHelper {
         File reportOutputDirectory = new File("target");
         ArrayList<String> jsonFiles = new ArrayList<String>();
         jsonFiles.add("target/cucumber.json");
-        Configuration configuration = new Configuration(reportOutputDirectory, "Naggaro");
-        configuration.addClassifications("Project", "Naggaro");
-        if (FileReaderManager.getInstance().getConfigReader().getPlatform().equalsIgnoreCase("web")) {
-            configuration.addClassifications("Platform", FileReaderManager.getInstance().getConfigReader().getPlatform());
+        Configuration configuration = new Configuration(reportOutputDirectory, "Web_Mobile_Framework");
+        configuration.addClassifications("Project", "Web_Mobile_Framework");
+        String platform  = FileReaderManager.getInstance().getConfigReader().getPlatform();
+        if (platform.equalsIgnoreCase("web")) {
+            configuration.addClassifications("Platform", platform);
             configuration.addClassifications("Browser", FileReaderManager.getInstance().getConfigReader().getBrowserName());
-        } else if (FileReaderManager.getInstance().getConfigReader().getPlatform().equalsIgnoreCase("android")) {
-            configuration.addClassifications("Platform", FileReaderManager.getInstance().getConfigReader().getPlatform());
+        } else if (platform.equalsIgnoreCase("android")) {
+            configuration.addClassifications("Platform", platform);
             configuration.addClassifications("Device", Shell.getDeviceDetails()[1]);
         } else {
-            configuration.addClassifications("Platform", "Android and WEb");
+            configuration.addClassifications("Platform", "Android and Web");
             configuration.addClassifications("Browser", FileReaderManager.getInstance().getConfigReader().getBrowserName());
             configuration.addClassifications("Device", Shell.getDeviceDetails()[1]);
         }

@@ -8,14 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-
-import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.util.Collections;
-import java.util.GregorianCalendar;
+
 
 @CucumberOptions(strict = true, monochrome = true, features = "src/test/java/FeatureFiles",
         glue = "stepFiles", plugin = {"pretty", "json:target/cucumber.json"}
@@ -52,19 +46,4 @@ public class WebRunner extends AbstractTestNGCucumberParallelTests {
             startDriver();
         return driver;
     }
-
-//    @AfterMethod(alwaysRun = true)
-//    public void killDriver(ITestResult result) {
-//        String path = null;
-//        String ImageFileName = result.getMethod().getMethodName()
-//                + new SimpleDateFormat("MM-dd-yyyy_HH-ss").format(new GregorianCalendar().getTime()) + ".png";
-//        if (result.isSuccess()) {
-//            path = System.getProperty("user.dir") + "//screenshots/Web/Pass//" + ImageFileName;
-//        } else {
-//            path = System.getProperty("user.dir") + "//screenshots/Web/Fail-Skip//" + ImageFileName;
-//        }
-//        takeScreenShot(ImageFileName,path,driver);
-//        driver.quit();
-//    }
-
 }

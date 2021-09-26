@@ -68,9 +68,11 @@ public class MobileRunner extends AbstractTestNGCucumberParallelTests {
         capabilities.setCapability("deviceName", deviceDetails[1]);
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("app", buildPath);
+        capabilities.setCapability("appPackage","io.selendroid.testapp");
         capabilities.setCapability(MobileCapabilityType.NO_RESET, false);
         capabilities.setCapability("automationName", "UiAutomator2");
-        capabilities.setCapability("autoDismissAlerts", "true");
+        capabilities.setCapability("autoAcceptAlerts", "true");
+        capabilities.setCapability("autoGrantPermissions", "true");
         driver = new AndroidDriver(new URL("http://localhost:" + String.valueOf(freePort) + "/wd/hub"), capabilities);
     }
 
@@ -98,20 +100,5 @@ public class MobileRunner extends AbstractTestNGCucumberParallelTests {
         }
         throw new IOException("Unable to find free port");
     }
-
-//    @AfterMethod(alwaysRun = true)
-//    public void killDriver(ITestResult result) {
-//        String path = null;
-//        String ImageFileName = result.getMethod().getMethodName()
-//                + new SimpleDateFormat("MM-dd-yyyy_HH-ss").format(new GregorianCalendar().getTime()) + ".png";
-//        if (result.isSuccess()) {
-//            path = System.getProperty("user.dir") + "//screenshots/Mobile/Pass//" + ImageFileName;
-//        } else {
-//            path = System.getProperty("user.dir") + "//screenshots/Mobile/Fail-Skip//" + ImageFileName;
-//        }
-//        takeScreenShot(ImageFileName, path, driver);
-//        driver.quit();
-//    }
-
 
 }
