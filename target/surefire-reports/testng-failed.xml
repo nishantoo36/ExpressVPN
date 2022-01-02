@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="1" configfailurepolicy="continue" verbose="0" name="Failed suite [BDD Test Suite]" parallel="tests">
-  <test name="Naggaro Test(failed)" parallel="tests">
+  <test name="Express VPN Test(failed)" parallel="tests">
     <classes>
-      <class name="runner.AllRunner">
+      <class name="runner.WebRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0 1 2 3 4 5 6 7 8"/>
+          <include name="runScenario" invocation-numbers="1 2 3 5 6 9 13"/>
+          <include name="killDriver"/>
           <include name="tearDownClass"/>
+          <include name="generateHTMLReports"/>
         </methods>
-      </class> <!-- runner.AllRunner -->
+      </class> <!-- runner.WebRunner -->
     </classes>
-  </test> <!-- Naggaro Test(failed) -->
+  </test> <!-- Express VPN Test(failed) -->
 </suite> <!-- Failed suite [BDD Test Suite] -->

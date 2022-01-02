@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 13587050226,
+              "duration": 13723766872,
               "status": "passed"
             },
             "line": 4,
@@ -39,7 +39,7 @@
         "steps": [
           {
             "result": {
-              "duration": 42485479,
+              "duration": 61417375,
               "status": "passed"
             },
             "line": 7,
@@ -57,7 +57,7 @@
           },
           {
             "result": {
-              "duration": 43797257,
+              "duration": 48275368,
               "status": "passed"
             },
             "line": 8,
@@ -69,7 +69,7 @@
           },
           {
             "result": {
-              "duration": 91414683,
+              "duration": 112993107,
               "status": "passed"
             },
             "line": 9,
@@ -87,7 +87,7 @@
           },
           {
             "result": {
-              "duration": 58176067,
+              "duration": 49899224,
               "status": "passed"
             },
             "line": 10,
@@ -105,7 +105,7 @@
           },
           {
             "result": {
-              "duration": 41411583,
+              "duration": 41428179,
               "status": "passed"
             },
             "line": 11,
@@ -132,7 +132,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7516600525,
+              "duration": 8007254472,
               "status": "passed"
             },
             "line": 4,
@@ -160,7 +160,7 @@
         "steps": [
           {
             "result": {
-              "duration": 87339062,
+              "duration": 72155794,
               "status": "passed"
             },
             "line": 14,
@@ -178,7 +178,7 @@
           },
           {
             "result": {
-              "duration": 68682568,
+              "duration": 18795932,
               "status": "passed"
             },
             "line": 15,
@@ -196,8 +196,9 @@
           },
           {
             "result": {
-              "duration": 24968166,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: Plan Suggestion dialog not appeared expected [true] but found [false]\n\tat org.testng.Assert.fail(Assert.java:94)\n\tat org.testng.Assert.failNotEquals(Assert.java:496)\n\tat org.testng.Assert.assertTrue(Assert.java:42)\n\tat stepFiles.WebSteps.OrderPageSteps.userShouldAbleToSeePlanBestSuggestionDialog(OrderPageSteps.java:60)\n\tat ✽.User should able to see plan best Suggestion dialog(src/test/java/FeatureFiles/WebTest/De.feature:16)\n",
+              "duration": 66435769,
+              "status": "failed"
             },
             "line": 16,
             "name": "User should able to see plan best Suggestion dialog",
@@ -208,8 +209,7 @@
           },
           {
             "result": {
-              "duration": 94675777,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 17,
             "name": "user select \"6 Monate\" plan",
@@ -226,8 +226,7 @@
           },
           {
             "result": {
-              "duration": 11320552,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 18,
             "name": "User should see \"6 Monate\" plan selected",
@@ -244,8 +243,7 @@
           },
           {
             "result": {
-              "duration": 15374052,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 19,
             "name": "User should able to see plan best Suggestion dialog",
@@ -256,8 +254,7 @@
           },
           {
             "result": {
-              "duration": 41627719,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 20,
             "name": "user select \"12 Monate\" plan",
@@ -274,8 +271,7 @@
           },
           {
             "result": {
-              "duration": 12071007,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 21,
             "name": "User should see \"12 Monate\" plan selected",
@@ -292,8 +288,7 @@
           },
           {
             "result": {
-              "duration": 22831063,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 22,
             "name": "User should not able to see plan best Suggestion dialog",
@@ -313,7 +308,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6983333595,
+              "duration": 7747448202,
               "status": "passed"
             },
             "line": 4,
@@ -341,7 +336,7 @@
         "steps": [
           {
             "result": {
-              "duration": 135132602,
+              "duration": 90086123,
               "status": "passed"
             },
             "line": 25,
@@ -359,7 +354,7 @@
           },
           {
             "result": {
-              "duration": 96446287,
+              "duration": 93725010,
               "status": "passed"
             },
             "line": 26,
@@ -377,9 +372,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: Credit card form is not appeared on screen expected [true] but found [false]\n\tat org.testng.Assert.fail(Assert.java:94)\n\tat org.testng.Assert.failNotEquals(Assert.java:496)\n\tat org.testng.Assert.assertTrue(Assert.java:42)\n\tat stepFiles.WebSteps.OrderPageSteps.itShouldOpenCreditCardDetailFillUpForm(OrderPageSteps.java:77)\n\tat ✽.it should open credit card detail fill up form(src/test/java/FeatureFiles/WebTest/De.feature:27)\n",
-              "duration": 2016693831,
-              "status": "failed"
+              "duration": 150791910,
+              "status": "passed"
             },
             "line": 27,
             "name": "it should open credit card detail fill up form",
@@ -390,7 +384,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 259705582,
+              "status": "passed"
             },
             "line": 28,
             "name": "User click on \"Jetzt anmelden\" button",
@@ -407,7 +402,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 43175039,
+              "status": "passed"
             },
             "line": 29,
             "name": "User should able to see no fill error for email",
@@ -418,7 +414,9 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "java.lang.AssertionError: All No fill error for credit card form are not appearing expected [true] but found [false]\n\tat org.testng.Assert.fail(Assert.java:94)\n\tat org.testng.Assert.failNotEquals(Assert.java:496)\n\tat org.testng.Assert.assertTrue(Assert.java:42)\n\tat stepFiles.WebSteps.OrderPageSteps.userShouldAbleToSeeNoFillErrorForCreditCardFormAllDetails(OrderPageSteps.java:87)\n\tat ✽.User should able to see no fill error for credit card form all details(src/test/java/FeatureFiles/WebTest/De.feature:30)\n",
+              "duration": 130660252,
+              "status": "failed"
             },
             "line": 30,
             "name": "User should able to see no fill error for credit card form all details",
@@ -438,7 +436,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9276351734,
+              "duration": 7189926875,
               "status": "passed"
             },
             "line": 4,
@@ -466,7 +464,7 @@
         "steps": [
           {
             "result": {
-              "duration": 75406302,
+              "duration": 108352111,
               "status": "passed"
             },
             "line": 33,
@@ -484,7 +482,7 @@
           },
           {
             "result": {
-              "duration": 126469207,
+              "duration": 170948371,
               "status": "passed"
             },
             "line": 34,
@@ -502,7 +500,7 @@
           },
           {
             "result": {
-              "duration": 55604530,
+              "duration": 39397864,
               "status": "passed"
             },
             "line": 35,
@@ -520,8 +518,9 @@
           },
           {
             "result": {
-              "duration": 125872618,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d96.0.4664.110)\nBuild info: version: \u00273.13.0\u0027, revision: \u00272f0d292\u0027, time: \u00272018-06-25T15:24:21.231Z\u0027\nSystem info: host: \u0027L1123.local\u0027, ip: \u0027fe80:0:0:0:d8:e797:8e2b:ab6%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_275\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/cq/kq1r5w9s3l1...}, goog:chromeOptions: {debuggerAddress: localhost:62510}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 9b4be4c7a5d53e0c63e09862a4e3c87e\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\n\tat Pages.Web.OrderPage.clickSubmitBtn(OrderPage.java:178)\n\tat stepFiles.WebSteps.OrderPageSteps.userClickOnButton(OrderPageSteps.java:92)\n\tat ✽.User click on \"Weiter zu PayPal\" button(src/test/java/FeatureFiles/WebTest/De.feature:36)\n",
+              "duration": 74871114,
+              "status": "failed"
             },
             "line": 36,
             "name": "User click on \"Weiter zu PayPal\" button",
@@ -538,8 +537,7 @@
           },
           {
             "result": {
-              "duration": 40391982,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 37,
             "name": "User should able to see no fill error for email",
@@ -559,7 +557,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6816886785,
+              "duration": 7758746893,
               "status": "passed"
             },
             "line": 4,
@@ -587,7 +585,7 @@
         "steps": [
           {
             "result": {
-              "duration": 74168307,
+              "duration": 79819326,
               "status": "passed"
             },
             "line": 40,
@@ -605,7 +603,7 @@
           },
           {
             "result": {
-              "duration": 197894899,
+              "duration": 213193571,
               "status": "passed"
             },
             "line": 41,
@@ -623,7 +621,7 @@
           },
           {
             "result": {
-              "duration": 46433305,
+              "duration": 64782405,
               "status": "passed"
             },
             "line": 42,
@@ -641,7 +639,7 @@
           },
           {
             "result": {
-              "duration": 184652673,
+              "duration": 172783536,
               "status": "passed"
             },
             "line": 43,
@@ -659,7 +657,7 @@
           },
           {
             "result": {
-              "duration": 24703134,
+              "duration": 28666364,
               "status": "passed"
             },
             "line": 44,
@@ -680,7 +678,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6103133276,
+              "duration": 5773046194,
               "status": "passed"
             },
             "line": 4,
@@ -708,7 +706,7 @@
         "steps": [
           {
             "result": {
-              "duration": 81667804,
+              "duration": 78597722,
               "status": "passed"
             },
             "line": 47,
@@ -726,7 +724,7 @@
           },
           {
             "result": {
-              "duration": 164293911,
+              "duration": 151503276,
               "status": "passed"
             },
             "line": 48,
@@ -744,7 +742,7 @@
           },
           {
             "result": {
-              "duration": 105722094,
+              "duration": 59480162,
               "status": "passed"
             },
             "line": 49,
@@ -762,8 +760,9 @@
           },
           {
             "result": {
-              "duration": 174818623,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d96.0.4664.110)\nBuild info: version: \u00273.13.0\u0027, revision: \u00272f0d292\u0027, time: \u00272018-06-25T15:24:21.231Z\u0027\nSystem info: host: \u0027L1123.local\u0027, ip: \u0027fe80:0:0:0:d8:e797:8e2b:ab6%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_275\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/cq/kq1r5w9s3l1...}, goog:chromeOptions: {debuggerAddress: localhost:62618}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 6ecb70de7cb273b3c85ed278c3f0e3ed\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\n\tat Pages.Web.OrderPage.clickSubmitBtn(OrderPage.java:178)\n\tat stepFiles.WebSteps.OrderPageSteps.userClickOnButton(OrderPageSteps.java:92)\n\tat ✽.User click on \"Weiter zu Paymentwall\" button(src/test/java/FeatureFiles/WebTest/De.feature:50)\n",
+              "duration": 73622084,
+              "status": "failed"
             },
             "line": 50,
             "name": "User click on \"Weiter zu Paymentwall\" button",
@@ -780,8 +779,7 @@
           },
           {
             "result": {
-              "duration": 23870330,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 51,
             "name": "User should able to see no fill error for email",
@@ -801,7 +799,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5187475210,
+              "duration": 5848133287,
               "status": "passed"
             },
             "line": 4,
@@ -829,7 +827,7 @@
         "steps": [
           {
             "result": {
-              "duration": 287505106,
+              "duration": 351550188,
               "status": "passed"
             },
             "line": 54,
@@ -847,8 +845,9 @@
           },
           {
             "result": {
-              "duration": 29959473,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: Error for invalid email is not appearing expected [true] but found [false]\n\tat org.testng.Assert.fail(Assert.java:94)\n\tat org.testng.Assert.failNotEquals(Assert.java:496)\n\tat org.testng.Assert.assertTrue(Assert.java:42)\n\tat stepFiles.WebSteps.OrderPageSteps.userShouldAbleToErrorForInvalidEmailAddress(OrderPageSteps.java:112)\n\tat ✽.User should able to error for invalid email address(src/test/java/FeatureFiles/WebTest/De.feature:55)\n",
+              "duration": 26231123,
+              "status": "failed"
             },
             "line": 55,
             "name": "User should able to error for invalid email address",
@@ -859,8 +858,7 @@
           },
           {
             "result": {
-              "duration": 85058755,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 56,
             "name": "User scroll down the page to \"Kreditkarte\" payment type",
@@ -877,8 +875,7 @@
           },
           {
             "result": {
-              "duration": 68210838,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 57,
             "name": "User select \"Kreditkarte\" payment type",
@@ -895,8 +892,7 @@
           },
           {
             "result": {
-              "duration": 242082627,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 58,
             "name": "User enter credit card number as \"12\"",
@@ -913,8 +909,7 @@
           },
           {
             "result": {
-              "duration": 245635638,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 59,
             "name": "User enter cvv as \"12\"",
@@ -931,8 +926,7 @@
           },
           {
             "result": {
-              "duration": 66477026,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 60,
             "name": "User should able to error for invalid card number",
@@ -943,8 +937,7 @@
           },
           {
             "result": {
-              "duration": 58812895,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 61,
             "name": "User should able to error for invalid cvv",
@@ -974,7 +967,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5747933342,
+              "duration": 6393631131,
               "status": "passed"
             },
             "line": 4,
@@ -1002,7 +995,7 @@
         "steps": [
           {
             "result": {
-              "duration": 23414243,
+              "duration": 25421967,
               "status": "passed"
             },
             "line": 7,
@@ -1020,7 +1013,7 @@
           },
           {
             "result": {
-              "duration": 35196512,
+              "duration": 50802135,
               "status": "passed"
             },
             "line": 8,
@@ -1032,7 +1025,7 @@
           },
           {
             "result": {
-              "duration": 37903228,
+              "duration": 52630310,
               "status": "passed"
             },
             "line": 9,
@@ -1050,7 +1043,7 @@
           },
           {
             "result": {
-              "duration": 39398517,
+              "duration": 87766521,
               "status": "passed"
             },
             "line": 10,
@@ -1068,7 +1061,7 @@
           },
           {
             "result": {
-              "duration": 60909061,
+              "duration": 68187996,
               "status": "passed"
             },
             "line": 11,
@@ -1095,7 +1088,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5590907561,
+              "duration": 8886724492,
               "status": "passed"
             },
             "line": 4,
@@ -1123,7 +1116,7 @@
         "steps": [
           {
             "result": {
-              "duration": 81240297,
+              "duration": 84210040,
               "status": "passed"
             },
             "line": 14,
@@ -1141,7 +1134,7 @@
           },
           {
             "result": {
-              "duration": 55019115,
+              "duration": 55082138,
               "status": "passed"
             },
             "line": 15,
@@ -1159,7 +1152,7 @@
           },
           {
             "result": {
-              "duration": 23688757,
+              "duration": 28932531,
               "status": "passed"
             },
             "line": 16,
@@ -1171,7 +1164,7 @@
           },
           {
             "result": {
-              "duration": 79734282,
+              "duration": 118719131,
               "status": "passed"
             },
             "line": 17,
@@ -1189,7 +1182,7 @@
           },
           {
             "result": {
-              "duration": 41853087,
+              "duration": 13458732,
               "status": "passed"
             },
             "line": 18,
@@ -1207,7 +1200,7 @@
           },
           {
             "result": {
-              "duration": 17687664,
+              "duration": 19240327,
               "status": "passed"
             },
             "line": 19,
@@ -1219,7 +1212,7 @@
           },
           {
             "result": {
-              "duration": 56978083,
+              "duration": 56108120,
               "status": "passed"
             },
             "line": 20,
@@ -1237,7 +1230,7 @@
           },
           {
             "result": {
-              "duration": 14089198,
+              "duration": 11571903,
               "status": "passed"
             },
             "line": 21,
@@ -1255,7 +1248,7 @@
           },
           {
             "result": {
-              "duration": 8342409,
+              "duration": 8536373,
               "status": "passed"
             },
             "line": 22,
@@ -1276,7 +1269,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6474656643,
+              "duration": 8593747178,
               "status": "passed"
             },
             "line": 4,
@@ -1304,7 +1297,7 @@
         "steps": [
           {
             "result": {
-              "duration": 97392196,
+              "duration": 86478119,
               "status": "passed"
             },
             "line": 25,
@@ -1322,7 +1315,7 @@
           },
           {
             "result": {
-              "duration": 155454975,
+              "duration": 131366693,
               "status": "passed"
             },
             "line": 26,
@@ -1340,8 +1333,9 @@
           },
           {
             "result": {
-              "duration": 2083745984,
-              "status": "passed"
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 0, Size: 0\n\tat java.util.ArrayList.rangeCheck(ArrayList.java:659)\n\tat java.util.ArrayList.get(ArrayList.java:435)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)\n\tat com.sun.proxy.$Proxy17.get(Unknown Source)\n\tat driverFactory.Web.DriverFactory.isElementListAvailable(DriverFactory.java:40)\n\tat Pages.Web.OrderPage.isCreditCardFormAppeared(OrderPage.java:168)\n\tat stepFiles.WebSteps.OrderPageSteps.itShouldOpenCreditCardDetailFillUpForm(OrderPageSteps.java:76)\n\tat ✽.it should open credit card detail fill up form(src/test/java/FeatureFiles/WebTest/En.feature:27)\n",
+              "duration": 16191314,
+              "status": "failed"
             },
             "line": 27,
             "name": "it should open credit card detail fill up form",
@@ -1352,8 +1346,7 @@
           },
           {
             "result": {
-              "duration": 103713512,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 28,
             "name": "User click on \"Join Now\" button",
@@ -1370,8 +1363,7 @@
           },
           {
             "result": {
-              "duration": 68463755,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 29,
             "name": "User should able to see no fill error for email",
@@ -1382,8 +1374,7 @@
           },
           {
             "result": {
-              "duration": 87671713,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 30,
             "name": "User should able to see no fill error for credit card form all details",
@@ -1403,7 +1394,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6782957771,
+              "duration": 7291267574,
               "status": "passed"
             },
             "line": 4,
@@ -1431,7 +1422,7 @@
         "steps": [
           {
             "result": {
-              "duration": 78646338,
+              "duration": 80946505,
               "status": "passed"
             },
             "line": 33,
@@ -1449,7 +1440,7 @@
           },
           {
             "result": {
-              "duration": 76483870,
+              "duration": 123386796,
               "status": "passed"
             },
             "line": 34,
@@ -1467,7 +1458,7 @@
           },
           {
             "result": {
-              "duration": 76105650,
+              "duration": 38741683,
               "status": "passed"
             },
             "line": 35,
@@ -1485,9 +1476,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d96.0.4664.110)\nBuild info: version: \u00273.13.0\u0027, revision: \u00272f0d292\u0027, time: \u00272018-06-25T15:24:21.231Z\u0027\nSystem info: host: \u0027L1123.local\u0027, ip: \u0027fe80:0:0:0:d8:e797:8e2b:ab6%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_275\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/cq/kq1r5w9s3l1...}, goog:chromeOptions: {debuggerAddress: localhost:59878}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 6d8ecb407670aa3e07be412627a29700\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\n\tat Pages.Web.OrderPage.clickSubmitBtn(OrderPage.java:178)\n\tat stepFiles.WebSteps.OrderPageSteps.userClickOnButton(OrderPageSteps.java:93)\n\tat ✽.User click on \"Continue to PayPal\" button(src/test/java/FeatureFiles/WebTest/En.feature:36)\n",
-              "duration": 50056471,
-              "status": "failed"
+              "duration": 141653980,
+              "status": "passed"
             },
             "line": 36,
             "name": "User click on \"Continue to PayPal\" button",
@@ -1504,7 +1494,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 24556547,
+              "status": "passed"
             },
             "line": 37,
             "name": "User should able to see no fill error for email",
@@ -1524,7 +1515,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9873815996,
+              "duration": 6372286507,
               "status": "passed"
             },
             "line": 4,
@@ -1552,7 +1543,7 @@
         "steps": [
           {
             "result": {
-              "duration": 79554203,
+              "duration": 83835655,
               "status": "passed"
             },
             "line": 40,
@@ -1570,7 +1561,7 @@
           },
           {
             "result": {
-              "duration": 137996765,
+              "duration": 186417314,
               "status": "passed"
             },
             "line": 41,
@@ -1588,7 +1579,7 @@
           },
           {
             "result": {
-              "duration": 49047322,
+              "duration": 40395400,
               "status": "passed"
             },
             "line": 42,
@@ -1606,7 +1597,7 @@
           },
           {
             "result": {
-              "duration": 186079991,
+              "duration": 126804379,
               "status": "passed"
             },
             "line": 43,
@@ -1624,7 +1615,7 @@
           },
           {
             "result": {
-              "duration": 30335069,
+              "duration": 34152562,
               "status": "passed"
             },
             "line": 44,
@@ -1645,7 +1636,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5575910152,
+              "duration": 6892604909,
               "status": "passed"
             },
             "line": 4,
@@ -1673,7 +1664,7 @@
         "steps": [
           {
             "result": {
-              "duration": 69091940,
+              "duration": 77130699,
               "status": "passed"
             },
             "line": 47,
@@ -1691,7 +1682,7 @@
           },
           {
             "result": {
-              "duration": 160676808,
+              "duration": 142429320,
               "status": "passed"
             },
             "line": 48,
@@ -1709,7 +1700,7 @@
           },
           {
             "result": {
-              "duration": 75190882,
+              "duration": 67250016,
               "status": "passed"
             },
             "line": 49,
@@ -1727,7 +1718,7 @@
           },
           {
             "result": {
-              "duration": 107340444,
+              "duration": 127163515,
               "status": "passed"
             },
             "line": 50,
@@ -1745,7 +1736,7 @@
           },
           {
             "result": {
-              "duration": 46645782,
+              "duration": 35007723,
               "status": "passed"
             },
             "line": 51,
@@ -1766,7 +1757,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6480854290,
+              "duration": 5476834572,
               "status": "passed"
             },
             "line": 4,
@@ -1794,7 +1785,7 @@
         "steps": [
           {
             "result": {
-              "duration": 299677479,
+              "duration": 217088554,
               "status": "passed"
             },
             "line": 54,
@@ -1812,7 +1803,7 @@
           },
           {
             "result": {
-              "duration": 31784565,
+              "duration": 22813361,
               "status": "passed"
             },
             "line": 55,
@@ -1824,7 +1815,7 @@
           },
           {
             "result": {
-              "duration": 114875690,
+              "duration": 221162129,
               "status": "passed"
             },
             "line": 56,
@@ -1842,7 +1833,7 @@
           },
           {
             "result": {
-              "duration": 73184628,
+              "duration": 72271609,
               "status": "passed"
             },
             "line": 57,
@@ -1860,8 +1851,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d96.0.4664.110)\nBuild info: version: \u00273.13.0\u0027, revision: \u00272f0d292\u0027, time: \u00272018-06-25T15:24:21.231Z\u0027\nSystem info: host: \u0027L1123.local\u0027, ip: \u0027fe80:0:0:0:d8:e797:8e2b:ab6%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_275\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/cq/kq1r5w9s3l1...}, goog:chromeOptions: {debuggerAddress: localhost:60037}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 94da9e9bc7d2ade7e1d6462d40864587\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)\n\tat org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:118)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\n\tat com.sun.proxy.$Proxy19.clear(Unknown Source)\n\tat Pages.Web.OrderPage.enterCreditCardNumber(OrderPage.java:257)\n\tat stepFiles.WebSteps.OrderPageSteps.userEnterCreditCardNumberAs(OrderPageSteps.java:128)\n\tat ✽.User enter credit card number as \"12\"(src/test/java/FeatureFiles/WebTest/En.feature:58)\n",
-              "duration": 43489773,
+              "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d96.0.4664.110)\nBuild info: version: \u00273.13.0\u0027, revision: \u00272f0d292\u0027, time: \u00272018-06-25T15:24:21.231Z\u0027\nSystem info: host: \u0027L1123.local\u0027, ip: \u0027fe80:0:0:0:d8:e797:8e2b:ab6%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_275\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/cq/kq1r5w9s3l1...}, goog:chromeOptions: {debuggerAddress: localhost:63048}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: f485b2a33cc90cbbfb5d2d3a72880bd5\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)\n\tat org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:118)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\n\tat com.sun.proxy.$Proxy18.clear(Unknown Source)\n\tat Pages.Web.OrderPage.enterCreditCardNumber(OrderPage.java:257)\n\tat stepFiles.WebSteps.OrderPageSteps.userEnterCreditCardNumberAs(OrderPageSteps.java:127)\n\tat ✽.User enter credit card number as \"12\"(src/test/java/FeatureFiles/WebTest/En.feature:58)\n",
+              "duration": 59401171,
               "status": "failed"
             },
             "line": 58,

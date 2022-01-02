@@ -1,0 +1,525 @@
+<html>
+<head>
+<title>TestNG:  Express VPN Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Express VPN Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/7/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jan 02 18:10:14 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>147 seconds (147927 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.WebRunner.runScenario()'><b>runScenario</b><br>Test class: runner.WebRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the selection of plan", "De"<br/>
+<a href="#Output-1736953311" onClick='toggleBox("Output-1736953311", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1736953311" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1736953311">
+<div "result">User open order page with &quot;de&quot; Language (PASSED : 8s)</div><br/>
+<div "result">user select &quot;1 Monat&quot; plan (PASSED : 0s)</div><br/>
+<div "result">User should see &quot;1 Monat&quot; plan selected (PASSED : 0s)</div><br/>
+<div "result">User should able to see plan best Suggestion dialog (FAILED : 0s)</div><br/>
+<div "result">user select &quot;6 Monate&quot; plan (SKIPPED)</div><br/>
+<div "result">User should see &quot;6 Monate&quot; plan selected (SKIPPED)</div><br/>
+<div "result">User should able to see plan best Suggestion dialog (SKIPPED)</div><br/>
+<div "result">user select &quot;12 Monate&quot; plan (SKIPPED)</div><br/>
+<div "result">User should see &quot;12 Monate&quot; plan selected (SKIPPED)</div><br/>
+<div "result">User should not able to see plan best Suggestion dialog (SKIPPED)</div><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Plan Suggestion dialog not appeared expected [true] but found [false]
+	at stepFiles.WebSteps.OrderPageSteps.userShouldAbleToSeePlanBestSuggestionDialog(OrderPageSteps.java:60)
+	at ?.User should able to see plan best Suggestion dialog(src/test/java/FeatureFiles/WebTest/De.feature:16)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1736953311", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1736953311'><pre>java.lang.AssertionError: Plan Suggestion dialog not appeared expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at stepFiles.WebSteps.OrderPageSteps.userShouldAbleToSeePlanBestSuggestionDialog(OrderPageSteps.java:60)
+	at ?.User should able to see plan best Suggestion dialog(src/test/java/FeatureFiles/WebTest/De.feature:16)
+</pre></div></td>
+<td>8</td>
+<td>runner.WebRunner@1753acfe</td></tr>
+<tr>
+<td title='runner.WebRunner.runScenario()'><b>runScenario</b><br>Test class: runner.WebRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify no fill Validation message for Credit card", "De"<br/>
+<a href="#Output-753374944" onClick='toggleBox("Output-753374944", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-753374944" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-753374944">
+<div "result">User open order page with &quot;de&quot; Language (PASSED : 7s)</div><br/>
+<div "result">User scroll down the page to &quot;Kreditkarte&quot; payment type (PASSED : 0s)</div><br/>
+<div "result">User select &quot;Kreditkarte&quot; payment type (PASSED : 0s)</div><br/>
+<div "result">it should open credit card detail fill up form (PASSED : 0s)</div><br/>
+<div "result">User click on &quot;Jetzt anmelden&quot; button (PASSED : 0s)</div><br/>
+<div "result">User should able to see no fill error for email (PASSED : 0s)</div><br/>
+<div "result">User should able to see no fill error for credit card form all details (FAILED : 0s)</div><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: All No fill error for credit card form are not appearing expected [true] but found [false]
+	at stepFiles.WebSteps.OrderPageSteps.userShouldAbleToSeeNoFillErrorForCreditCardFormAllDetails(OrderPageSteps.java:87)
+	at ?.User should able to see no fill error for credit card form all details(src/test/java/FeatureFiles/WebTest/De.feature:30)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace753374944", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace753374944'><pre>java.lang.AssertionError: All No fill error for credit card form are not appearing expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at stepFiles.WebSteps.OrderPageSteps.userShouldAbleToSeeNoFillErrorForCreditCardFormAllDetails(OrderPageSteps.java:87)
+	at ?.User should able to see no fill error for credit card form all details(src/test/java/FeatureFiles/WebTest/De.feature:30)
+</pre></div></td>
+<td>8</td>
+<td>runner.WebRunner@1753acfe</td></tr>
+<tr>
+<td title='runner.WebRunner.runScenario()'><b>runScenario</b><br>Test class: runner.WebRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify no fill Validation message for PayPal", "De"<br/>
+<a href="#Output-753123346" onClick='toggleBox("Output-753123346", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-753123346" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-753123346">
+<div "result">User open order page with &quot;de&quot; Language (PASSED : 7s)</div><br/>
+<div "result">User scroll down the page to &quot;PayPal&quot; payment type (PASSED : 0s)</div><br/>
+<div "result">User select &quot;PayPal&quot; payment type (PASSED : 0s)</div><br/>
+<div "result">User should able to see &quot;Weiter zu PayPal&quot; button (PASSED : 0s)</div><br/>
+<div "result">User click on &quot;Weiter zu PayPal&quot; button (FAILED : 0s)</div><br/>
+<div "result">User should able to see no fill error for email (SKIPPED)</div><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;L1123.local&apos;, ip: &apos;fe80:0:0:0:d8:e797:8e2b:ab6%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_275&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/cq/kq1r5w9s3l1...}, goog:chromeOptions: {debuggerAddress: localhost:62510}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9b4be4c7a5d53e0c63e09862a4e3c87e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at Pages.Web.OrderPage.clickSubmitBtn(OrderPage.java:178)
+	at stepFiles.WebSteps.OrderPageSteps.userClickOnButton(OrderPageSteps.java:92)
+	at ?.User click on &quot;Weiter zu PayPal&quot; button(src/test/java/FeatureFiles/WebTest/De.feature:36)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace753123346", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace753123346'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;L1123.local&apos;, ip: &apos;fe80:0:0:0:d8:e797:8e2b:ab6%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_275&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/cq/kq1r5w9s3l1...}, goog:chromeOptions: {debuggerAddress: localhost:62510}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9b4be4c7a5d53e0c63e09862a4e3c87e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at Pages.Web.OrderPage.clickSubmitBtn(OrderPage.java:178)
+	at stepFiles.WebSteps.OrderPageSteps.userClickOnButton(OrderPageSteps.java:92)
+	at ?.User click on &quot;Weiter zu PayPal&quot; button(src/test/java/FeatureFiles/WebTest/De.feature:36)
+</pre></div></td>
+<td>7</td>
+<td>runner.WebRunner@1753acfe</td></tr>
+<tr>
+<td title='runner.WebRunner.runScenario()'><b>runScenario</b><br>Test class: runner.WebRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify no fill Validation message for Other", "De"<br/>
+<a href="#Output-732087438" onClick='toggleBox("Output-732087438", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-732087438" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-732087438">
+<div "result">User open order page with &quot;de&quot; Language (PASSED : 5s)</div><br/>
+<div "result">User scroll down the page to &quot;Oder bezahlen Sie mit&quot; payment type (PASSED : 0s)</div><br/>
+<div "result">User select &quot;Oder bezahlen Sie mit&quot; payment type (PASSED : 0s)</div><br/>
+<div "result">User should able to see &quot;Weiter zu Paymentwall&quot; button (PASSED : 0s)</div><br/>
+<div "result">User click on &quot;Weiter zu Paymentwall&quot; button (FAILED : 0s)</div><br/>
+<div "result">User should able to see no fill error for email (SKIPPED)</div><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;L1123.local&apos;, ip: &apos;fe80:0:0:0:d8:e797:8e2b:ab6%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_275&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/cq/kq1r5w9s3l1...}, goog:chromeOptions: {debuggerAddress: localhost:62618}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ecb70de7cb273b3c85ed278c3f0e3ed
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at Pages.Web.OrderPage.clickSubmitBtn(OrderPage.java:178)
+	at stepFiles.WebSteps.OrderPageSteps.userClickOnButton(OrderPageSteps.java:92)
+	at ?.User click on &quot;Weiter zu Paymentwall&quot; button(src/test/java/FeatureFiles/WebTest/De.feature:50)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace732087438", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace732087438'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;L1123.local&apos;, ip: &apos;fe80:0:0:0:d8:e797:8e2b:ab6%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_275&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/cq/kq1r5w9s3l1...}, goog:chromeOptions: {debuggerAddress: localhost:62618}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ecb70de7cb273b3c85ed278c3f0e3ed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at Pages.Web.OrderPage.clickSubmitBtn(OrderPage.java:178)
+	at stepFiles.WebSteps.OrderPageSteps.userClickOnButton(OrderPageSteps.java:92)
+	at ?.User click on &quot;Weiter zu Paymentwall&quot; button(src/test/java/FeatureFiles/WebTest/De.feature:50)
+</pre></div></td>
+<td>6</td>
+<td>runner.WebRunner@1753acfe</td></tr>
+<tr>
+<td title='runner.WebRunner.runScenario()'><b>runScenario</b><br>Test class: runner.WebRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Validation message for invalid values", "De"<br/>
+<a href="#Output-187133697" onClick='toggleBox("Output-187133697", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-187133697" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-187133697">
+<div "result">User open order page with &quot;de&quot; Language (PASSED : 5s)</div><br/>
+<div "result">User enter email address as &quot;test&quot; (PASSED : 0s)</div><br/>
+<div "result">User should able to error for invalid email address (FAILED : 0s)</div><br/>
+<div "result">User scroll down the page to &quot;Kreditkarte&quot; payment type (SKIPPED)</div><br/>
+<div "result">User select &quot;Kreditkarte&quot; payment type (SKIPPED)</div><br/>
+<div "result">User enter credit card number as &quot;12&quot; (SKIPPED)</div><br/>
+<div "result">User enter cvv as &quot;12&quot; (SKIPPED)</div><br/>
+<div "result">User should able to error for invalid card number (SKIPPED)</div><br/>
+<div "result">User should able to error for invalid cvv (SKIPPED)</div><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Error for invalid email is not appearing expected [true] but found [false]
+	at stepFiles.WebSteps.OrderPageSteps.userShouldAbleToErrorForInvalidEmailAddress(OrderPageSteps.java:112)
+	at ?.User should able to error for invalid email address(src/test/java/FeatureFiles/WebTest/De.feature:55)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace187133697", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace187133697'><pre>java.lang.AssertionError: Error for invalid email is not appearing expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at stepFiles.WebSteps.OrderPageSteps.userShouldAbleToErrorForInvalidEmailAddress(OrderPageSteps.java:112)
+	at ?.User should able to error for invalid email address(src/test/java/FeatureFiles/WebTest/De.feature:55)
+</pre></div></td>
+<td>6</td>
+<td>runner.WebRunner@1753acfe</td></tr>
+<tr>
+<td title='runner.WebRunner.runScenario()'><b>runScenario</b><br>Test class: runner.WebRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify no fill Validation message for Credit card", "En"<br/>
+<a href="#Output-422100073" onClick='toggleBox("Output-422100073", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-422100073" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-422100073">
+<div "result">User open order page with &quot;en&quot; Language (PASSED : 8s)</div><br/>
+<div "result">User scroll down the page to &quot;Credit Card&quot; payment type (PASSED : 0s)</div><br/>
+<div "result">User select &quot;Credit Card&quot; payment type (PASSED : 0s)</div><br/>
+<div "result">it should open credit card detail fill up form (FAILED : 0s)</div><br/>
+<div "result">User click on &quot;Join Now&quot; button (SKIPPED)</div><br/>
+<div "result">User should able to see no fill error for email (SKIPPED)</div><br/>
+<div "result">User should able to see no fill error for credit card form all details (SKIPPED)</div><br/>
+</div>
+</td>
+<td><div><pre>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at com.sun.proxy.$Proxy17.get(Unknown Source)
+	at driverFactory.Web.DriverFactory.isElementListAvailable(DriverFactory.java:40)
+	at Pages.Web.OrderPage.isCreditCardFormAppeared(OrderPage.java:168)
+	at stepFiles.WebSteps.OrderPageSteps.itShouldOpenCreditCardDetailFillUpForm(OrderPageSteps.java:76)
+	at ?.it should open credit card detail fill up form(src/test/java/FeatureFiles/WebTest/En.feature:27)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace422100073", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace422100073'><pre>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at com.sun.proxy.$Proxy17.get(Unknown Source)
+	at driverFactory.Web.DriverFactory.isElementListAvailable(DriverFactory.java:40)
+	at Pages.Web.OrderPage.isCreditCardFormAppeared(OrderPage.java:168)
+	at stepFiles.WebSteps.OrderPageSteps.itShouldOpenCreditCardDetailFillUpForm(OrderPageSteps.java:76)
+	at ?.it should open credit card detail fill up form(src/test/java/FeatureFiles/WebTest/En.feature:27)
+</pre></div></td>
+<td>8</td>
+<td>runner.WebRunner@1753acfe</td></tr>
+<tr>
+<td title='runner.WebRunner.runScenario()'><b>runScenario</b><br>Test class: runner.WebRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Validation message for invalid values", "En"<br/>
+<a href="#Output-1826336049" onClick='toggleBox("Output-1826336049", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1826336049" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1826336049">
+<div "result">User open order page with &quot;en&quot; Language (PASSED : 5s)</div><br/>
+<div "result">User enter email address as &quot;test&quot; (PASSED : 0s)</div><br/>
+<div "result">User should able to error for invalid email address (PASSED : 0s)</div><br/>
+<div "result">User scroll down the page to &quot;Credit Card&quot; payment type (PASSED : 0s)</div><br/>
+<div "result">User select &quot;Credit Card&quot; payment type (PASSED : 0s)</div><br/>
+<div "result">User enter credit card number as &quot;12&quot; (FAILED : 0s)</div><br/>
+<div "result">User enter cvv as &quot;12&quot; (SKIPPED)</div><br/>
+<div "result">User should able to error for invalid card number (SKIPPED)</div><br/>
+<div "result">User should able to error for invalid cvv (SKIPPED)</div><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;L1123.local&apos;, ip: &apos;fe80:0:0:0:d8:e797:8e2b:ab6%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_275&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/cq/kq1r5w9s3l1...}, goog:chromeOptions: {debuggerAddress: localhost:63048}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f485b2a33cc90cbbfb5d2d3a72880bd5
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:118)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy18.clear(Unknown Source)
+	at Pages.Web.OrderPage.enterCreditCardNumber(OrderPage.java:257)
+	at stepFiles.WebSteps.OrderPageSteps.userEnterCreditCardNumberAs(OrderPageSteps.java:127)
+	at ?.User enter credit card number as &quot;12&quot;(src/test/java/FeatureFiles/WebTest/En.feature:58)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1826336049", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1826336049'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;L1123.local&apos;, ip: &apos;fe80:0:0:0:d8:e797:8e2b:ab6%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_275&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/cq/kq1r5w9s3l1...}, goog:chromeOptions: {debuggerAddress: localhost:63048}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f485b2a33cc90cbbfb5d2d3a72880bd5
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy18.clear(Unknown Source)
+	at Pages.Web.OrderPage.enterCreditCardNumber(OrderPage.java:257)
+	at stepFiles.WebSteps.OrderPageSteps.userEnterCreditCardNumberAs(OrderPageSteps.java:127)
+	at ?.User enter credit card number as &quot;12&quot;(src/test/java/FeatureFiles/WebTest/En.feature:58)
+</pre></div></td>
+<td>6</td>
+<td>runner.WebRunner@1753acfe</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.WebRunner.runScenario()'><b>runScenario</b><br>Test class: runner.WebRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the planDetails", "De"<br/>
+<a href="#Output-420331312" onClick='toggleBox("Output-420331312", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-420331312" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-420331312">
+<div "result">User open order page with &quot;de&quot; Language (PASSED : 13s)</div><br/>
+<div "result">User should see &quot;12 Monate&quot; plan selected (PASSED : 0s)</div><br/>
+<div "result">User should see list of plan (PASSED : 0s)</div><br/>
+<div "result">User should see details of &quot;1 Monat&quot; plan (PASSED : 0s)</div><br/>
+<div "result">User should see details of &quot;6 Monate&quot; plan (PASSED : 0s)</div><br/>
+<div "result">User should see details of &quot;12 Monate&quot; plan (PASSED : 0s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>runner.WebRunner@1753acfe</td></tr>
+<tr>
+<td title='runner.WebRunner.runScenario()'><b>runScenario</b><br>Test class: runner.WebRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify no fill Validation message for Bitcoin", "De"<br/>
+<a href="#Output-1978822855" onClick='toggleBox("Output-1978822855", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1978822855" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1978822855">
+<div "result">User open order page with &quot;de&quot; Language (PASSED : 7s)</div><br/>
+<div "result">User scroll down the page to &quot;Bitcoin&quot; payment type (PASSED : 0s)</div><br/>
+<div "result">User select &quot;Bitcoin&quot; payment type (PASSED : 0s)</div><br/>
+<div "result">User should able to see &quot;Weiter zu BitPay&quot; button (PASSED : 0s)</div><br/>
+<div "result">User click on &quot;Weiter zu BitPay&quot; button (PASSED : 0s)</div><br/>
+<div "result">User should able to see no fill error for email (PASSED : 0s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>runner.WebRunner@1753acfe</td></tr>
+<tr>
+<td title='runner.WebRunner.runScenario()'><b>runScenario</b><br>Test class: runner.WebRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the planDetails", "En"<br/>
+<a href="#Output-1072089673" onClick='toggleBox("Output-1072089673", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1072089673" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1072089673">
+<div "result">User open order page with &quot;en&quot; Language (PASSED : 6s)</div><br/>
+<div "result">User should see &quot;12 Months&quot; plan selected (PASSED : 0s)</div><br/>
+<div "result">User should see list of plan (PASSED : 0s)</div><br/>
+<div "result">User should see details of &quot;1 Month&quot; plan (PASSED : 0s)</div><br/>
+<div "result">User should see details of &quot;6 Months&quot; plan (PASSED : 0s)</div><br/>
+<div "result">User should see details of &quot;12 Months&quot; plan (PASSED : 0s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>runner.WebRunner@1753acfe</td></tr>
+<tr>
+<td title='runner.WebRunner.runScenario()'><b>runScenario</b><br>Test class: runner.WebRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the selection of plan", "En"<br/>
+<a href="#Output-664308575" onClick='toggleBox("Output-664308575", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-664308575" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-664308575">
+<div "result">User open order page with &quot;en&quot; Language (PASSED : 8s)</div><br/>
+<div "result">user select &quot;1 Month&quot; plan (PASSED : 0s)</div><br/>
+<div "result">User should see &quot;1 Month&quot; plan selected (PASSED : 0s)</div><br/>
+<div "result">User should able to see plan best Suggestion dialog (PASSED : 0s)</div><br/>
+<div "result">user select &quot;6 Month&quot; plan (PASSED : 0s)</div><br/>
+<div "result">User should see &quot;6 Months&quot; plan selected (PASSED : 0s)</div><br/>
+<div "result">User should able to see plan best Suggestion dialog (PASSED : 0s)</div><br/>
+<div "result">user select &quot;12 Months&quot; plan (PASSED : 0s)</div><br/>
+<div "result">User should see &quot;12 Months&quot; plan selected (PASSED : 0s)</div><br/>
+<div "result">User should not able to see plan best Suggestion dialog (PASSED : 0s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>runner.WebRunner@1753acfe</td></tr>
+<tr>
+<td title='runner.WebRunner.runScenario()'><b>runScenario</b><br>Test class: runner.WebRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify no fill Validation message for PayPal", "En"<br/>
+<a href="#Output-736122767" onClick='toggleBox("Output-736122767", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-736122767" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-736122767">
+<div "result">User open order page with &quot;en&quot; Language (PASSED : 7s)</div><br/>
+<div "result">User scroll down the page to &quot;PayPal&quot; payment type (PASSED : 0s)</div><br/>
+<div "result">User select &quot;PayPal&quot; payment type (PASSED : 0s)</div><br/>
+<div "result">User should able to see &quot;Continue to PayPal&quot; button (PASSED : 0s)</div><br/>
+<div "result">User click on &quot;Continue to PayPal&quot; button (PASSED : 0s)</div><br/>
+<div "result">User should able to see no fill error for email (PASSED : 0s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>runner.WebRunner@1753acfe</td></tr>
+<tr>
+<td title='runner.WebRunner.runScenario()'><b>runScenario</b><br>Test class: runner.WebRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify no fill Validation message for Bitcoin", "En"<br/>
+<a href="#Output-1215881804" onClick='toggleBox("Output-1215881804", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1215881804" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1215881804">
+<div "result">User open order page with &quot;en&quot; Language (PASSED : 6s)</div><br/>
+<div "result">User scroll down the page to &quot;Bitcoin&quot; payment type (PASSED : 0s)</div><br/>
+<div "result">User select &quot;Bitcoin&quot; payment type (PASSED : 0s)</div><br/>
+<div "result">User should able to see &quot;Continue to BitPay&quot; button (PASSED : 0s)</div><br/>
+<div "result">User click on &quot;Continue to BitPay&quot; button (PASSED : 0s)</div><br/>
+<div "result">User should able to see no fill error for email (PASSED : 0s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>runner.WebRunner@1753acfe</td></tr>
+<tr>
+<td title='runner.WebRunner.runScenario()'><b>runScenario</b><br>Test class: runner.WebRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify no fill Validation message for Other", "En"<br/>
+<a href="#Output-621641799" onClick='toggleBox("Output-621641799", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-621641799" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-621641799">
+<div "result">User open order page with &quot;en&quot; Language (PASSED : 6s)</div><br/>
+<div "result">User scroll down the page to &quot;Other&quot; payment type (PASSED : 0s)</div><br/>
+<div "result">User select &quot;Other&quot; payment type (PASSED : 0s)</div><br/>
+<div "result">User should able to see &quot;Continue to Paymentwall&quot; button (PASSED : 0s)</div><br/>
+<div "result">User click on &quot;Continue to Paymentwall&quot; button (PASSED : 0s)</div><br/>
+<div "result">User should able to see no fill error for email (PASSED : 0s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>runner.WebRunner@1753acfe</td></tr>
+</table><p>
+</body>
+</html>
