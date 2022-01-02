@@ -12,4 +12,4 @@ You can run the code using mvn verify and as well as using testNG xml too.
 4. <b> Localisation Testing </b>: To manage localisation testing create json file in "src/main/resources/Data" directory with the specific set of data need to check. 
 Also create same language feature file for the respective feature 
 
-5. To run this code need to just hit the command "Mvn test"
+5. To run this code need to just hit the command "mvn test"
