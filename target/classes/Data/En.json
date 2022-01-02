@@ -1,0 +1,62 @@
+{
+  "URL": "https://www.expressvpn.com/order",
+  "title": "Buy VPN With Bitcoin, PayPal, Credit Card | ExpressVPN",
+  "mobile": {
+    "header": "Choose your ExpressVPN plan",
+    "1": "Select a plan that works for you:",
+    "2": "Enter your email address:",
+    "3": "Select your payment method:"
+  },
+  "web": {
+    "header": "Choose your plan",
+    "Step 1": "Select a plan that works for you:",
+    "Step 2": "Enter your email address:",
+    "Step 3": "Select your preferred method of payment:"
+  },
+  "ExpressVPN includes": [
+    "24/7 customer support by live chat",
+    "Ultra-fast servers in 94 countries",
+    "Apps for       and more!",
+    "Best-in-class security & encryption",
+    "No activity logs & no connection logs",
+    "30 days risk-free. Not satisfied? Get your money back, no questions asked"
+  ],
+  "plans": [
+    "1 Month",
+    "12 Months",
+    "6 Months"
+  ],
+  "currency": "$",
+  "planDescription": {
+    "1 Month": {
+      "price": "12.95",
+      "totalBill": "Billed $12.95 every month."
+    },
+    "12 Months": {
+      "price": "12.95",
+      "discountedPrice": "8.32",
+      "totalBill": "Billed $155.40 $99.95 every 12 months.",
+      "savingPercentage": "Save 35%"
+    },
+    "6 Months": {
+      "price": "9.99",
+      "totalBill": "Billed $59.95 every 6 months."
+    }
+  },
+  "plan suggestion dialog": "The 12-month plan offers the biggest savings and all plans are fully refundable for 30 days.",
+  "Credit Card form Details": ["FIRST NAME","LAST NAME","CREDIT CARD NUMBER","EXPIRY DATE","CVC","ZIP/POSTAL CODE"],
+  "validations": {
+    "noFillEmail": "Enter email",
+    "invalidEmail": "Please enter a valid email address.",
+    "creditCardForm": {
+      "FirstName": "Enter first name",
+      "LastName": "Enter last name",
+      "noFilCardNumber": "Enter a credit card number",
+      "invalidCardNumber": "Please enter a valid credit card number.",
+      "expiryMonth": "Select expiry month",
+      "expiryYear":"Select expiry year",
+      "noFilCVV": "Enter a valid CVC code (3 or 4 digits)",
+      "invalidCVV": "Please enter a value between 3 and 4 characters long."
+    }
+  }
+}

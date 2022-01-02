@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="BDD Test Suite" verbose="1" parallel="tests" thread-count="1" configfailurepolicy="continue">
-    <test name="Naggaro Test" annotations="JDK" preserve-order="true">
+    <test name="Express VPN Test" annotations="JDK" preserve-order="true">
         <classes>
-            <class name="runner.AllRunner"/>
+            <class name="runner.WebRunner"/>
         </classes>
     </test>
 </suite>

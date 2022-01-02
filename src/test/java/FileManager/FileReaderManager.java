@@ -1,6 +1,6 @@
 package FileManager;
 
-import Pages.Web.ConfigFileReader;
+import driverFactory.Web.ConfigFileReader;
 
 public  class FileReaderManager {
 

@@ -11,10 +11,10 @@
     <protocol>https</protocol>
     
     <!-- title of the document -->
-    <documentTitle>Naggaro - Cucumber Framework</documentTitle>
+    <documentTitle>ExpressVPN - Cucumber Framework</documentTitle>
     
     <!-- report name - displayed at top-nav -->
-    <reportName>Naggaro - Cucumber Report</reportName>
+    <reportName>ExpressVPN - Cucumber Report</reportName>
     
     <!-- global date format override -->  <!-- defaults to yyyy-MM-dd -->
     <dateFormat>yyyy-MM-dd</dateFormat>

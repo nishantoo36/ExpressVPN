@@ -1,0 +1,62 @@
+{
+  "URL": "https://www.expressvpn.com/de/order",
+  "title": "VPN kaufen und mit PayPal, Kreditkarte und Bitcoin zahlen",
+  "mobile": {
+    "header": "Wählen Sie Ihren Tarif",
+    "Step 1": "Wählen Sie einen für Sie passenden Tarif:",
+    "Step 2": "Geben Sie Ihre E-Mail-Adresse ein:",
+    "3": "Wählen Sie Ihre Zahlungsmethode:"
+  },
+  "web": {
+    "header": "Wählen Sie Ihren ExpressVPN-Tarif",
+    "Step 1": "Wählen Sie einen für Sie passenden Tarif:",
+    "Step 2": "Geben Sie Ihre E-Mail-Adresse ein:",
+    "Step 3": "SWählen Sie Ihre bevorzugte Zahlungsweise:"
+  },
+  "ExpressVPN includes": [
+    "Kundenbetreuung rund um die Uhr per Live-Chat",
+    "Ultraschnelle Server in 94 Ländern",
+    "Apps für       und mehr!",
+    "Branchenführende Sicherheit & Verschlüsselung",
+    "Keine Aktivitätsprotokolle & keine Verbindungsprotokolle",
+    "30 Tage ohne Risiko. Nicht zufrieden? Sie erhalten Ihr Geld ohne Nachfragen zurück."
+  ],
+  "plans": [
+    "1 Monat",
+    "12 Monate",
+    "6 Monate"
+  ],
+  "currency": "$",
+  "planDescription": {
+    "1 Monat": {
+      "price": "12,95",
+      "totalBill": "Monatlich $12,95."
+    },
+    "12 Monate": {
+      "price": "12,95",
+      "discountedPrice": "8,32",
+      "totalBill": "Alle 12 Monate $99,95.",
+      "savingPercentage": "35 % sparen"
+    },
+    "6 Monate": {
+      "price": "9,99",
+      "totalBill": "Alle 6 Monate $59,95."
+    }
+  },
+  "plan suggestion dialog": "Das 12-monatige Abo beinhaltet die größten Einsparungen und ist in den ersten 30 Tagen komplett erstattungsfähig.",
+  "Credit Card form Details": ["VORNAME","NACHNAME","KREDITKARTENNUMMER","ABLAUFDATUM","CVC","PLZ (POSTLEITZAHL)"],
+  "validations": {
+    "noFillEmail": "E-Mail eingeben",
+    "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+    "creditCardForm": {
+      "FirstName": "Vorname eingeben",
+      "LastName": "Nachnamen eingeben",
+      "noFilCardNumber": "Kreditkartennummer eingeben",
+      "invalidCardNumber": "Bitte geben Sie eine gültige Kreditkartennummer ein.",
+      "expiryMonth": "Wählen Sie den Gültigkeitsmonat",
+      "expiryYear":"Gültigkeitsjahr auswählen",
+      "noFilCVV": "Geben Sie einen gültigen CVC-Code ein (3 oder 4 Ziffern)",
+      "invalidCVV": "Bitte geben Sie einen Wert mit einer Länge von 3 bis 4 Zeichen ein."
+    }
+  }
+}

@@ -8,7 +8,7 @@ import java.io.IOException;
 public class TestContext {
 	private WebPageObjectManager webPageObjectManager;
 	private WebRunner cucumberWebRunner;
-	public TestContext() throws IOException {
+	public TestContext() {
 		cucumberWebRunner = new WebRunner();
 		webPageObjectManager = new WebPageObjectManager(cucumberWebRunner.getWebDriver());
 	}

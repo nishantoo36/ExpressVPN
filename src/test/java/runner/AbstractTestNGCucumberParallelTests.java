@@ -1,6 +1,5 @@
 package runner;
 
-import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 import helpers.ReportHelper;
 import org.apache.commons.io.FileUtils;
@@ -30,7 +29,7 @@ public abstract class AbstractTestNGCucumberParallelTests extends AbstractTestNG
         ReportHelper.generateCucumberReport();
     }
 
-    public void takeScreenShot(String screenshotName, String path,Object driver) {
+    public void takeScreenShot(String screenshotName, String path, Object driver) {
         try {
             File sourcePath = ((TakesScreenshot) driver)
                     .getScreenshotAs(OutputType.FILE);
@@ -46,25 +45,15 @@ public abstract class AbstractTestNGCucumberParallelTests extends AbstractTestNG
         String path = null;
         String ImageFileName = result.getMethod().getMethodName()
                 + new SimpleDateFormat("MM-dd-yyyy_HH-ss").format(new GregorianCalendar().getTime()) + ".png";
-        if(MobileRunner.driver!=null) {
-            if (result.isSuccess()) {
-                path = System.getProperty("user.dir") + "//screenshots/Mobile/Pass//" + ImageFileName;
-            } else {
-                path = System.getProperty("user.dir") + "//screenshots/Mobile/Fail-Skip//" + ImageFileName;
-            }
-            takeScreenShot(ImageFileName, path, MobileRunner.driver);
-            MobileRunner.driver.quit();
-            MobileRunner.driver=null;
-        }else if(WebRunner.driver!=null){
-            if (result.isSuccess()) {
-                path = System.getProperty("user.dir") + "//screenshots/Web/Pass//" + ImageFileName;
-            } else {
-                path = System.getProperty("user.dir") + "//screenshots/Web/Fail-Skip//" + ImageFileName;
-            }
-            takeScreenShot(ImageFileName, path, WebRunner.driver);
-            WebRunner.driver.quit();
-            WebRunner.driver=null;
+
+        if (result.isSuccess()) {
+            path = System.getProperty("user.dir") + "//screenshots/Web/Pass//" + ImageFileName;
+        } else {
+            path = System.getProperty("user.dir") + "//screenshots/Web/Fail-Skip//" + ImageFileName;
         }
+        takeScreenShot(ImageFileName, path, WebRunner.driver);
+        WebRunner.driver.quit();
+        WebRunner.driver = null;
     }
 
 }

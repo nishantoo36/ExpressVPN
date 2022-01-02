@@ -12,8 +12,7 @@ import java.util.Collections;
 
 
 @CucumberOptions(strict = true, monochrome = true, features = "src/test/java/FeatureFiles",
-        glue = "stepFiles", plugin = {"pretty", "json:target/cucumber.json"}
-        , tags = {"@WebScenarios"})
+        glue = "stepFiles", plugin = {"pretty", "json:target/cucumber.json"})
 public class WebRunner extends AbstractTestNGCucumberParallelTests {
 
     public static WebDriver driver = null;

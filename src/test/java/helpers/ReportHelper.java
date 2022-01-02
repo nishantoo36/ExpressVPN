@@ -13,20 +13,11 @@ public class ReportHelper {
         File reportOutputDirectory = new File("target");
         ArrayList<String> jsonFiles = new ArrayList<String>();
         jsonFiles.add("target/cucumber.json");
-        Configuration configuration = new Configuration(reportOutputDirectory, "Web_Mobile_Framework");
-        configuration.addClassifications("Project", "Web_Mobile_Framework");
+        Configuration configuration = new Configuration(reportOutputDirectory, "Web_Framework");
+        configuration.addClassifications("Project", "Web_Framework");
         String platform  = FileReaderManager.getInstance().getConfigReader().getPlatform();
-        if (platform.equalsIgnoreCase("web")) {
-            configuration.addClassifications("Platform", platform);
-            configuration.addClassifications("Browser", FileReaderManager.getInstance().getConfigReader().getBrowserName());
-        } else if (platform.equalsIgnoreCase("android")) {
-            configuration.addClassifications("Platform", platform);
-            configuration.addClassifications("Device", Shell.getDeviceDetails()[1]);
-        } else {
-            configuration.addClassifications("Platform", "Android and Web");
-            configuration.addClassifications("Browser", FileReaderManager.getInstance().getConfigReader().getBrowserName());
-            configuration.addClassifications("Device", Shell.getDeviceDetails()[1]);
-        }
+        configuration.addClassifications("Platform", platform);
+        configuration.addClassifications("Browser", FileReaderManager.getInstance().getConfigReader().getBrowserName());
         ReportBuilder reportBuilder = new ReportBuilder(jsonFiles, configuration);
         reportBuilder.generateReports();
     }
